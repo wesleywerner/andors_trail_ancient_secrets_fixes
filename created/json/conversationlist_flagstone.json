@@ -1,0 +1,39 @@
+[
+    {
+        "id":"flagstone_sentry_return5",
+        "message":"Hello again. Have you found the former warden in Flagstone yet?",
+        "replies":[
+            {
+                "text":"I found the warden. He attacked me, so I had no choice but to kill him. I found this necklace on him.",
+                "nextPhraseID":"flagstone_sentry_46"
+            }
+        ]
+    },
+    {
+        "id":"flagstone_sentry_46",
+        "message":"Oh, the wardens necklace! He used to be very protective about it. I wonder if it had any special purpose. Maybe you should search the prison more thoroughly, you never know what secrets it might hold.",
+        "replies":[
+            {
+                "text":"Alright, I will go and have another look.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"flagstone_brokensteps_select",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"flagstone_brokensteps",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"flagstone",
+                        "value":20,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    }
+]
